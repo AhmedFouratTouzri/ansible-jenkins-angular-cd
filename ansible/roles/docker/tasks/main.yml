@@ -4,7 +4,7 @@
 - name: Refresh DockerHub credentials
   docker_login:
     username: touzria
-    password: "{{ dockerhub_password | b64decode }}"
+    password: '{{ dockerhub_password | b64decode }}'
     reauthorize: yes
 
 - name: create image docker
