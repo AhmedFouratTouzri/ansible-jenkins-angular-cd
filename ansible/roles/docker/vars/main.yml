@@ -1,4 +1,4 @@
 ---
 # vars file for docker
 repo: devops
-dockerhub_password: '{{ bUBzdGVybG9sczk3Cg== | b64decode }}'
+dockerhub_password: "bUBzdGVybG9sczk3Cg=="
