@@ -1,0 +1,15 @@
+---
+# tasks file for docker-registry
+- name: Sign in to DockerHub
+  docker_login:
+    username: touzria
+    password: "{{ dockerhub_password }}"
+    reauthorize: yes
+
+- name: Tag and push to docker hub
+  community.docker.docker_image:
+    name: touzria/angular-app:1.0
+    repository: touzria/angular-app:1.0
+    tag: 1.0
+    push: yes
+    source: local

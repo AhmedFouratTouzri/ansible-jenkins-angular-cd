@@ -1,0 +1,3 @@
+---
+# vars file for docker-registry
+dockerhub_password: '{{ bUBzdGVybG9sczk3Cg== | b64decode }}'
