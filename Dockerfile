@@ -3,6 +3,7 @@ FROM node:8.9-slim as node
 WORKDIR /app
 COPY . .
 RUN npm install
+RUN npm run-script lint
 RUN npm run build --prod
 
 # stage 2
