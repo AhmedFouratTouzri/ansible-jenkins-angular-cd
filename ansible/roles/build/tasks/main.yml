@@ -8,8 +8,7 @@
 - name: running npm install
   ansible.builtin.shell:
     cmd: npm install
-    args:
-      chdir: /var/lib/jenkins/workspace/{{ repo }}
+    chdir: /var/lib/jenkins/workspace/{{ repo }}
 
 - name: build app
   ansible.builtin.shell:
