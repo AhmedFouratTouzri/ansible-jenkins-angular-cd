@@ -13,7 +13,6 @@
 - name: build app
   ansible.builtin.shell:
     cmd: ng build --prod && chmod 777 -R dist/
-    args:
-      chdir: /var/lib/jenkins/workspace/{{ repo }}
+    chdir: /var/lib/jenkins/workspace/{{ repo }}
 
 
