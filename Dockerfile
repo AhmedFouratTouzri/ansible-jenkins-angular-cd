@@ -1,5 +1,5 @@
 # stage 1
-FROM node:latest as node
+FROM node:8.9-slim as node
 WORKDIR /app
 COPY . .
 RUN npm install
