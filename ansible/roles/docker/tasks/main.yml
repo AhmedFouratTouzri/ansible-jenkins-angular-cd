@@ -1,8 +1,15 @@
 ---
 # tasks file for docker
+
+- name: Refresh DockerHub credentials
+  docker_login:
+    username: touzria
+    password: "{{ dockerhub_password }}"
+    reauthorize: yes
+
 - name: create image docker
   docker_image:
-    name: tozuria/angular-app:1.0
+    name: touzria/angular-app:1.0
     build:
      path: /var/lib/jenkins/workspace/{{ repo }}
      pull: no
