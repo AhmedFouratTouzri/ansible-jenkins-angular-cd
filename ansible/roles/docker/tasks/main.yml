@@ -4,7 +4,11 @@
 - name: Refresh DockerHub credentials
   docker_login:
     username: touzria
+<<<<<<< HEAD
     password: "{{ dockerhub_password | b64decode | trim }}"
+=======
+    password: '{{ dockerhub_password | b64decode }}'
+>>>>>>> parent of 4824acd (temporarily added clear text passwd for testing purposes)
     reauthorize: yes
 
 - name: create image docker
